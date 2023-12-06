@@ -455,3 +455,27 @@ var ParticlePool = (function () {
   }, 10);
 
 })(document.getElementById('pinkboard'));
+
+(function() {
+  var yes = document.getElementById('agree');
+  var no = document.getElementById('disagree');
+  yes.onclick = agreeButton;
+  no.onclick = disagreeButton;
+  no.onmouseenter = disagreeButton;
+})()
+
+function agreeButton() {
+  var confirmDiv = document.getElementsByClassName('confirm')[0];
+  var pinkboard = document.getElementById('pinkboard');
+  var loveText = document.getElementsByClassName('text-love-you')[0];
+  pinkboard.classList.add('show');
+  loveText.classList.add('show');
+  confirmDiv.classList.add('hidden');
+}
+
+function disagreeButton() {
+  var no = document.getElementById('disagree');
+  no.classList.add('clicked');
+  no.style.top = `${Math.random() * (window.screen.availHeight / 2)}px`;
+  no.style.left = `${Math.random() * (window.screen.availWidth / 2)}px`;
+}

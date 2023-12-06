@@ -8,17 +8,32 @@ body {
     margin: 0;
 
     background: #000;
-
+    overflow: hidden;
 }
 
 canvas {
-
     position: absolute;
-
     width: 100%;
-
     height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 2s;
+}
 
+canvas.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.text-love-you {
+    opacity: 0;
+    visibility: hidden;
+    transition: 2s;
+}
+
+.text-love-you.show {
+    opacity: 1;
+    visibility: visible;
 }
 
 .center-text {
@@ -33,4 +48,52 @@ canvas {
     justify-content: center;
     margin-bottom: 5px;
     text-align: center;
+}
+
+.confirm {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    transition: .5s;
+}
+
+.confirm.hidden {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.confirm h1 {
+    color: white;
+}
+
+.action-button {
+    position: relative;
+}
+
+.confirm button {
+    width: 100px;
+    height: 40px;
+    border-radius: 6%;
+    border: none;
+    overflow: hidden;
+}
+
+.confirm button:last-child {
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 120px;
+    transition: 1s;
+}
+
+.confirm button:last-child.clicked {
+    position: absolute;
+}
+
+.confirm button:first-child {
+    background-color: #ff3685;
+    color: white;
 }
