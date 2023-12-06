@@ -7,7 +7,7 @@ var settings = {
 
     velocity: 200, // particle velocity in pixels/sec
 
-    effect: -1.5, // play with this for a nice effect
+    effect: -1.2, // play with this for a nice effect
 
     size: 30, // particle size in pixels
 
