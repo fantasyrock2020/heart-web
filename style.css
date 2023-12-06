@@ -66,6 +66,7 @@ canvas.show {
 
 .confirm h1 {
     color: white;
+    font-size: 40px;
 }
 
 .action-button {
@@ -73,9 +74,10 @@ canvas.show {
 }
 
 .confirm button {
-    width: 100px;
-    height: 40px;
+    width: 140px;
+    height: 60px;
     border-radius: 6%;
+    font-size: 26px;
     border: none;
     overflow: hidden;
 }
@@ -85,8 +87,8 @@ canvas.show {
     color: white;
     position: absolute;
     top: 0;
-    left: 120px;
-    transition: 1s;
+    left: 160px;
+    transition: .5s;
 }
 
 .confirm button:last-child.clicked {
