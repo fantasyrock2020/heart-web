@@ -28,6 +28,7 @@ canvas.show {
 .text-love-you {
     opacity: 0;
     visibility: hidden;
+    font-size: 40px;
     transition: 2s;
 }
 
@@ -41,7 +42,8 @@ canvas.show {
     width: 100%;
     color: rgb(225, 12, 168);
     height:100%;
-    font-size: 31px;
+    font-size: 40px;
+    font-weight: bold;
     font-style: italic;
     display: flex;
     align-items: center;
